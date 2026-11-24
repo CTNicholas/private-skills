@@ -93,6 +93,55 @@ This is the target (do this):
 >
 > - `nextjs-yjs-superdoc`: Basic example with live cursors in the text editor.
 > - `yjs-superdoc-react.mdx`: Get started guide for Superdoc.
+>
+
+## New gallery examples
+
+A new example always ships as two PRs with a fixed shape. Copy it exactly.
+
+### Example PR (liveblocks/liveblocks)
+
+- Title: `Adds <name> example`, where `<name>` is the plain product name in
+  lower case (`social media calendar`, `support inbox`), not the folder slug.
+- Body, in this order:
+  1. One or two sentences: `Adds a collaborative <name> example, built with
+     [<Product>](<url>).` followed by a short sentence of what people do in it,
+     written as actions ("Plan posts on a shared calendar, drag them between
+     days, and write each one together…"). Link Liveblocks products or
+     third-party tools by name. No bullet list of files.
+  2. Evidence: a screen recording as a bare `https://github.com/user-attachments/...`
+     URL on its own line, or the thumbnail `<img ... width="536">` if there is
+     no recording.
+  3. A `**TODO AFTER**` checklist:
+     ```
+     **TODO AFTER**
+     - [ ] Deploy example
+     - [ ] Merge https://github.com/liveblocks/liveblocks.io/pull/<n>
+     ```
+
+Worked example:
+
+> Adds a collaborative social media calendar example, built with
+> [UI SDK](https://ui-sdk.dev). Plan posts on a shared calendar, drag them
+> between days, and write each one together with comments and attachments.
+>
+> https://github.com/user-attachments/assets/…
+>
+> **TODO AFTER**
+> - [x] Deploy example
+> - [x] Merge https://github.com/liveblocks/liveblocks.io/pull/3510
+
+### Website PR (liveblocks/liveblocks.io)
+
+- Same title as the example PR: `Adds <name> example`.
+- Body is exactly:
+  ```
+  Adds the <name> example to the examples index.
+
+  **TODO**
+  - [ ] Merge https://github.com/liveblocks/liveblocks/pull/<n>
+  ```
+  No bullets for the images or `examples.ts`.
 
 ## Anti-patterns (avoid)
 
